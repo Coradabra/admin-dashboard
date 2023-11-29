@@ -21,6 +21,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -66,16 +67,18 @@ li {
 
 .nav button {
   font-size: 24px;
-  background-color: #05a0b4;
+  background-color: #5ce0f1;
   height: 4rem;
   padding: 0.5rem 2rem;
   margin: 1rem;
   border-radius: 1rem;
+  border: none;;
 }
 
 .profile-picture {
   height: 100px;
-  width: auto;
+  width: 100px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -85,6 +88,7 @@ li {
   font-family: "Inknut Antiqua", serif;
   color: var(--icy-primary, #92e7ff);
   text-shadow: 0.2rem 0.1rem 0.4rem #277e81;
+  padding: 1rem 2rem;
 }
 
 .sidebar ul {
@@ -95,9 +99,7 @@ li {
   font-size: 32px;
 }
 
-.sidebar li img,
-.sidebar svg,
-.sidebar object {
+svg {
   height: auto;
   width: 2rem;
   padding: 0 1rem;
@@ -108,15 +110,8 @@ main {
   grid-template-columns: 2fr 1fr;
 }
 
-.content {
-  display: grid;
-  padding: 1rem;
-  grid-template-rows: 1fr 10fr;
-}
-
 .cards {
   display: grid;
-  gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -129,5 +124,22 @@ main {
     rgba(249, 227, 145, 1) 0%,
     rgba(249, 227, 145, 1) 100%
   );
-  padding: 1rem;
+  padding: 2rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards .card {
+  border-left: 1rem solid #277e81;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: right;
+}
+
+.card-icons svg {
+  padding: 0 1rem;
 }
