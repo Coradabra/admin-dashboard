@@ -72,7 +72,7 @@ li {
   padding: 0.5rem 2rem;
   margin: 1rem;
   border-radius: 1rem;
-  border: none;;
+  border: none;
 }
 
 .profile-picture {
@@ -131,8 +131,30 @@ main {
   justify-content: space-between;
 }
 
+.card h5 {
+  font-size: 22px;
+}
+
 .cards .card {
-  border-left: 1rem solid #277e81;
+  border-left: 1rem solid;
+}
+
+.cards .ice-spell {
+  border-color: #63f0f5;
+}
+
+.cards .fire-spell {
+  border-color: #ff2d2d;
+}
+
+.cards .arcane-spell {
+  border-color: #f563e2;
+}
+
+.card .note {
+  font-style: italic;
+  font-size: 1rem;;
+  font-weight: 500;
 }
 
 .card-icons {
