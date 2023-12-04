@@ -42,6 +42,7 @@ li {
 
 .nav {
   background-color: #dad8d8;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav div {
@@ -82,6 +83,11 @@ li {
   object-fit: cover;
   border-radius: 50%;
   margin-right: 16px;
+  background: linear-gradient(
+    0deg,
+    rgb(72, 190, 181) 0%,
+    rgb(67, 120, 155) 100%
+  );
 }
 
 .sidebar {
@@ -104,6 +110,7 @@ li {
 
 .sidebar li:hover {
   color: rgb(228, 228, 228);
+  transition: 100ms;
 }
 
 svg {
@@ -115,6 +122,13 @@ svg {
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
+}
+
+.notifications h4,
+.trending h4,
+.content h4 {
+  font-size: 28px;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .cards {
@@ -137,6 +151,11 @@ main {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+  transition: 100ms;
+}
+
+.cards .card:hover {
+  box-shadow: 6px 6px 12px 6px rgba(0, 0, 0, 0.3);
 }
 
 .card h5 {
@@ -174,6 +193,20 @@ main {
 
 .card-icons svg {
   padding: 0 1rem;
+}
+
+.announcement {
+  padding: 2rem 0;
+  border-top: 1px solid #414141;
+}
+
+.announcement:nth-child(1) {
+  border-top: none;
+  padding-top: 0;
+}
+
+.announcement:nth-last-child(1) {
+  padding-bottom: 0;
 }
 
 .trending .card {
