@@ -209,6 +209,11 @@ main {
   padding-bottom: 0;
 }
 
+.cards h5,
+.announcement h5 {
+  padding-bottom: 0.5rem;
+}
+
 .trending .card {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
